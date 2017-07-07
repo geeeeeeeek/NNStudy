@@ -28,7 +28,8 @@ X = rdm.rand(dataset_size,2)
 Y = [[int(x1+x2 < 1)] for (x1,x2) in X]
 
 with tf.Session() as sess:
-	init_op = tf.initialize_all_variables()
+	# init_op = tf.initialize_all_variables()
+	init_op = tf.global_variables_initializer()
 	sess.run(init_op)
 	print sess.run(w1)
 	print sess.run(w2)
