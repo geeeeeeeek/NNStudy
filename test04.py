@@ -42,7 +42,7 @@ with tf.Session() as sess:
 		sess.run(train_step,
 			feed_dict={x: X[start:end],y_: Y[start:end]})
 
-		if i % 1000 == 0:
+		if i % 100 == 0:
 			total_cross_entropy = sess.run(
 				cross_entropy,feed_dict={x: X,y_: Y})
 			print("After %d training steps,cross entropy on all data is %g"%
