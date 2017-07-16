@@ -1,9 +1,10 @@
+# -*- coding: utf-8 -*-
 import os
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import tensorflow as tf
 
-# Model parameters
+# 模型参数
 W = tf.Variable([.3], dtype=tf.float32)
 b = tf.Variable([-.3], dtype=tf.float32)
 # Model input and output
