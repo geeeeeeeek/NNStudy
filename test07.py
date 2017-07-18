@@ -15,7 +15,7 @@ LEARNING_RATE_BASE = 0.8
 LEARNING_RATE_DECAY = 0.99
 
 REGULARIZATION_RATE = 0.0001
-TRAINING_STEPS = 30000
+TRAINING_STEPS = 4000
 MOVING_AVERAGE_DECAY = 0.99
 
 
@@ -96,7 +96,7 @@ def train(mnist):
             sess.run(train_op, feed_dict={x: xs, y_: ys})
 
         test_acc = sess.run(accuracy, feed_dict=test_feed)
-        print(("After %d training step(s), test accuracy using average model is %g" % (TRAINING_STEPS, test_acc)))
+        print("After %d training step(s), test accuracy using average model is %g" % (TRAINING_STEPS, test_acc))
 
 
 def main(avgv=None):
