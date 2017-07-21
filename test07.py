@@ -4,6 +4,8 @@ from tensorflow.examples.tutorials.mnist import input_data
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
+# mnist 训练过程
+
 INPUT_NODE = 784
 OUTPUT_NODE = 10
 

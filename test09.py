@@ -4,6 +4,8 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import tensorflow as tf
 
+# 滑动平均的使用
+
 v1 = tf.Variable(0, dtype=tf.float32)
 step = tf.Variable(0, trainable=False)
 ema = tf.train.ExponentialMovingAverage(0.99, step)

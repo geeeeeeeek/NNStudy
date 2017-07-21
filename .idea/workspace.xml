@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f38f2df-fd59-409c-8eec-729f83651a27" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test08.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test09.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test10.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test02.py" afterPath="$PROJECT_DIR$/test02.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test01.py" afterPath="$PROJECT_DIR$/test01.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test03.py" afterPath="$PROJECT_DIR$/test03.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test07.py" afterPath="$PROJECT_DIR$/test07.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test09.py" afterPath="$PROJECT_DIR$/test09.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,11 +19,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test08.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test08.py">
+      <file leaf-file-name="test10.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test10.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -31,8 +32,8 @@
       <file leaf-file-name="test09.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test09.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="157">
+              <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -57,9 +58,12 @@
         <option value="$PROJECT_DIR$/test04.py" />
         <option value="$PROJECT_DIR$/test06.py" />
         <option value="$PROJECT_DIR$/test02.py" />
-        <option value="$PROJECT_DIR$/test07.py" />
         <option value="$PROJECT_DIR$/test08.py" />
+        <option value="$PROJECT_DIR$/test01.py" />
+        <option value="$PROJECT_DIR$/test03.py" />
+        <option value="$PROJECT_DIR$/test07.py" />
         <option value="$PROJECT_DIR$/test09.py" />
+        <option value="$PROJECT_DIR$/test10.py" />
       </list>
     </option>
   </component>
@@ -82,10 +86,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="py_project" />
@@ -98,11 +110,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="FullScreen" value="true" />
   </component>
   <component name="RunDashboard">
@@ -117,7 +131,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test08.py">
+  <component name="RunManager" selected="Python tests.Unittests in test07.py">
+    <configuration default="false" name="Unittests in test01.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="py_project" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test01.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
     <configuration default="false" name="Unittests in test02.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -133,7 +162,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in test05.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests in test03.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -144,11 +173,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="py_project" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test05.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test03.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in test06.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests in test04.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -159,7 +188,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="py_project" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test06.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test04.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
@@ -175,21 +204,6 @@
       <module name="py_project" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test07.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in test08.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="py_project" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test08.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
@@ -258,19 +272,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test02.py" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test05.py" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test06.py" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test07.py" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in test08.py" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test01.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test02.py" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test03.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test04.py" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in test07.py" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test08.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test05.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test07.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test07.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test04.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test03.py" />
         <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test02.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in test06.py" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in test01.py" />
       </list>
     </recent_temporary>
   </component>
@@ -288,35 +302,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test08_py - 2017.07.18 at 23h 04m 22s.xml">
-      <configuration name="Unittests in test08.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test02_py - 2017.07.21 at 22h 07m 34s.xml">
+      <configuration name="Unittests in test02.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test08_py - 2017.07.18 at 23h 05m 50s.xml">
-      <configuration name="Unittests in test08.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test03_py - 2017.07.21 at 22h 09m 12s.xml">
+      <configuration name="Unittests in test03.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test08_py - 2017.07.18 at 23h 06m 09s.xml">
-      <configuration name="Unittests in test08.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test03_py - 2017.07.21 at 22h 09m 30s.xml">
+      <configuration name="Unittests in test03.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test08_py - 2017.07.18 at 23h 10m 51s.xml">
-      <configuration name="Unittests in test08.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test03_py - 2017.07.21 at 22h 10m 20s.xml">
+      <configuration name="Unittests in test03.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test08_py - 2017.07.18 at 23h 13m 59s.xml">
-      <configuration name="Unittests in test08.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test03_py - 2017.07.21 at 22h 11m 21s.xml">
+      <configuration name="Unittests in test03.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test08_py - 2017.07.18 at 23h 19m 49s.xml">
-      <configuration name="Unittests in test08.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test03_py - 2017.07.21 at 22h 11m 59s.xml">
+      <configuration name="Unittests in test03.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test08_py - 2017.07.18 at 23h 20m 07s.xml">
-      <configuration name="Unittests in test08.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test03_py - 2017.07.21 at 22h 12m 46s.xml">
+      <configuration name="Unittests in test03.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test08_py - 2017.07.18 at 23h 21m 16s.xml">
-      <configuration name="Unittests in test08.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test03_py - 2017.07.21 at 22h 13m 50s.xml">
+      <configuration name="Unittests in test03.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test08_py - 2017.07.18 at 23h 21m 36s.xml">
-      <configuration name="Unittests in test08.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test04_py - 2017.07.21 at 22h 16m 31s.xml">
+      <configuration name="Unittests in test04.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test08_py - 2017.07.18 at 23h 23m 04s.xml">
-      <configuration name="Unittests in test08.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test07_py - 2017.07.21 at 22h 37m 04s.xml">
+      <configuration name="Unittests in test07.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -332,7 +346,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20243205" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20529328" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39638555" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -364,9 +378,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#47#0" expanded="false" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test08.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test09.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test07.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -407,20 +443,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/tensorflow/lib/python2.7/site-packages/tensorflow/python/training/moving_averages.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="394" column="6" lean-forward="false" selection-start-line="394" selection-start-column="6" selection-end-line="394" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/tensorflow/lib/python2.7/site-packages/tensorflow/python/ops/nn_ops.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -428,10 +450,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/model.ckpt.data-00000-of-00001">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/model.ckpt.index">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/checkpoint">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/tensorflow/lib/python2.7/site-packages/tensorflow/python/client/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3777">
+          <caret line="666" column="6" lean-forward="false" selection-start-line="666" selection-start-column="6" selection-end-line="666" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/tensorflow/lib/python2.7/site-packages/tensorflow/python/ops/variables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="246" column="26" lean-forward="false" selection-start-line="246" selection-start-column="26" selection-end-line="246" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test01.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" column="21" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test03.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test04.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test05.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -443,44 +540,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test05.py">
+    <entry file="file://$USER_HOME$/tensorflow/lib/python2.7/site-packages/tensorflow/python/ops/random_ops.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        <state relative-caret-position="121">
+          <caret line="137" column="4" lean-forward="false" selection-start-line="137" selection-start-column="4" selection-end-line="137" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test04.py">
+    <entry file="file://$PROJECT_DIR$/test08.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="36" />
+        <state relative-caret-position="211">
+          <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/tensorflow/lib/python2.7/site-packages/tensorflow/python/ops/gen_control_flow_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="179" column="4" lean-forward="false" selection-start-line="179" selection-start-column="4" selection-end-line="179" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test07.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#47#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="10">
+          <caret line="85" column="30" lean-forward="true" selection-start-line="77" selection-start-column="46" selection-end-line="77" selection-end-column="67" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test08.py">
+    <entry file="file://$PROJECT_DIR$/test10.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/tensorflow/lib/python2.7/site-packages/tensorflow/python/training/moving_averages.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="298" column="0" lean-forward="true" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test09.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="157">
+          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
           <folding />
         </state>
       </provider>
