@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f38f2df-fd59-409c-8eec-729f83651a27" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test12.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test11.py" afterPath="$PROJECT_DIR$/test11.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,14 +36,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test11.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test11.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test11.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+            <state relative-caret-position="156">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="e#24#47#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test12.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test12.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="901">
+              <caret line="53" column="26" lean-forward="false" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="multiarray.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2017.1/python_stubs/203652952/numpy/core/multiarray.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="4254" column="8" lean-forward="false" selection-start-line="4254" selection-start-column="8" selection-end-line="4254" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="numeric.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/tensorflow/lib/python2.7/site-packages/numpy/core/numeric.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="467" column="18" lean-forward="false" selection-start-line="467" selection-start-column="8" selection-end-line="467" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -54,6 +86,11 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>reshape</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -72,6 +109,7 @@
         <option value="$PROJECT_DIR$/test09.py" />
         <option value="$PROJECT_DIR$/test10.py" />
         <option value="$PROJECT_DIR$/test11.py" />
+        <option value="$PROJECT_DIR$/test12.py" />
       </list>
     </option>
   </component>
@@ -96,16 +134,6 @@
     <panes>
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="py_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="py_project" />
@@ -310,24 +338,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test03_py - 2017.07.21 at 22h 10m 20s.xml">
-      <configuration name="Unittests in test03.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test03_py - 2017.07.21 at 22h 11m 21s.xml">
-      <configuration name="Unittests in test03.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test03_py - 2017.07.21 at 22h 11m 59s.xml">
-      <configuration name="Unittests in test03.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test03_py - 2017.07.21 at 22h 12m 46s.xml">
-      <configuration name="Unittests in test03.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test03_py - 2017.07.21 at 22h 13m 50s.xml">
-      <configuration name="Unittests in test03.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test04_py - 2017.07.21 at 22h 16m 31s.xml">
-      <configuration name="Unittests in test04.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test07_py - 2017.07.21 at 22h 37m 04s.xml">
       <configuration name="Unittests in test07.py" configurationId="tests" />
     </history-entry>
@@ -338,6 +348,24 @@
       <configuration name="Unittests in test11.py" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_test11_py - 2017.07.21 at 23h 00m 31s.xml">
+      <configuration name="Unittests in test11.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test11_py - 2017.07.22 at 23h 22m 20s.xml">
+      <configuration name="Unittests in test11.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test11_py - 2017.07.22 at 23h 22m 35s.xml">
+      <configuration name="Unittests in test11.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test11_py - 2017.07.22 at 23h 25m 22s.xml">
+      <configuration name="Unittests in test11.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test11_py - 2017.07.23 at 23h 59m 31s.xml">
+      <configuration name="Unittests in test11.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test11_py - 2017.07.23 at 23h 59m 52s.xml">
+      <configuration name="Unittests in test11.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test11_py - 2017.07.26 at 22h 45m 01s.xml">
       <configuration name="Unittests in test11.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -604,29 +632,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2017.1/python_stubs/203652952/numpy/core/multiarray.py">
+    <entry file="file://$USER_HOME$/tensorflow/lib/python2.7/site-packages/tensorflow/python/ops/array_ops.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="4254" column="8" lean-forward="false" selection-start-line="4254" selection-start-column="8" selection-end-line="4254" selection-end-column="8" />
+        <state relative-caret-position="65">
+          <caret line="1468" column="28" lean-forward="false" selection-start-line="1468" selection-start-column="23" selection-end-line="1468" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/tensorflow/lib/python2.7/site-packages/numpy/core/numeric.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="462" column="4" lean-forward="false" selection-start-line="462" selection-start-column="4" selection-end-line="462" selection-end-column="4" />
+        <state relative-caret-position="119">
+          <caret line="467" column="18" lean-forward="false" selection-start-line="467" selection-start-column="8" selection-end-line="467" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2017.1/python_stubs/203652952/numpy/core/multiarray.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="4254" column="8" lean-forward="false" selection-start-line="4254" selection-start-column="8" selection-end-line="4254" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/tensorflow/lib/python2.7/site-packages/numpy/core/fromnumeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="137" column="4" lean-forward="false" selection-start-line="137" selection-start-column="4" selection-end-line="137" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test11.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        <state relative-caret-position="156">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="e#24#47#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test12.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="26" lean-forward="false" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>

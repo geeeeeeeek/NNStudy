@@ -17,6 +17,7 @@ filter_weight = tf.get_variable('weights', [2, 2, 1, 1], initializer=tf.constant
     [0, 2]]))
 biases = tf.get_variable('biases', [1], initializer=tf.constant_initializer(1))
 
+
 M = np.asarray(M, dtype='float32')
 M = M.reshape(1, 3, 3, 1)
 
