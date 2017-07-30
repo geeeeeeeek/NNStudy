@@ -13,5 +13,3 @@ print "Testing data size:", mnist.test.num_examples
 print "Example training data:", mnist.train.images[0]
 
 print "Example training data label:", mnist.train.labels[0]
-
-
