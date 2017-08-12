@@ -11,7 +11,7 @@ cwd = os.getcwd()
 
 
 def create_record():
-    '''
+    """
     此处加载的数据目录如下：
     0 -- img1.jpg
          img2.jpg
@@ -21,8 +21,8 @@ def create_record():
          img2.jpg
          ...
     2 -- ...
-    ...
-    '''
+         ...
+    """
     num_classes = ['/tf_test14/0', '/tf_test14/1', '/tf_test14/2']
     writer = tf.python_io.TFRecordWriter("train.tfrecords")
     for index, name in enumerate(num_classes):

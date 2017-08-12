@@ -1,11 +1,11 @@
+# -*- coding: utf-8 -*-
 import os
-
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import tensorflow as tf
 from numpy.random import RandomState
 
 batch_size = 8
-
+# 定义参数
 w1 = tf.Variable(tf.random_normal([2, 3], stddev=1, seed=1))
 w2 = tf.Variable(tf.random_normal([3, 1], stddev=1, seed=1))
 
@@ -28,7 +28,6 @@ X = rdm.rand(dataset_size, 2)
 Y = [[int(x1 + x2 < 1)] for (x1, x2) in X]
 
 with tf.Session() as sess:
-    # init_op = tf.initialize_all_variables()
     init_op = tf.global_variables_initializer()
     sess.run(init_op)
     print sess.run(w1)
@@ -42,7 +41,7 @@ with tf.Session() as sess:
         sess.run(train_step,
                  feed_dict={x: X[start:end], y_: Y[start:end]})
 
-        if i % 100 == 0:
+        if i % 1000 == 0:
             total_cross_entropy = sess.run(
                 cross_entropy, feed_dict={x: X, y_: Y})
             print("After %d training steps,cross entropy on all data is %g" %
