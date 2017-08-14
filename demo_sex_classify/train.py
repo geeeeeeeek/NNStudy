@@ -26,10 +26,8 @@ for index, name in enumerate(num_classes):
 writer.close()
 
 # --------------------读取tfrecord----------------------
-# files = tf.train.match_filenames_once("train.tfrecords")
-# filename_queue = tf.train.string_input_producer(files, shuffle=False)
-
-filename_queue = tf.train.string_input_producer(["train.tfrecords"])
+files = tf.train.match_filenames_once("train.tfrecords")
+filename_queue = tf.train.string_input_producer(files, shuffle=False)
 
 # --------------------解析tfrecord数据-------------------
 reader = tf.TFRecordReader()
