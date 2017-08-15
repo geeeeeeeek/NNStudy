@@ -8,29 +8,27 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 cwd = os.getcwd()
 
 # ------------------创建tfrecord---------------------
-num_classes = ['/data/0', '/data/1', '/data/2']
+num_classes = ['/data/0', '/data/1']
 writer = tf.python_io.TFRecordWriter("train.tfrecords")
 for index, name in enumerate(num_classes):
     class_path = cwd + name + "/"
     print(class_path)
     for img_name in os.listdir(class_path):
-        img_path = class_path + img_name
-        img = Image.open(img_path)
-        img = img.resize((30, 30))
-        img_raw = img.tobytes()  # 将图片转化为原生bytes
-        example = tf.train.Example(features=tf.train.Features(feature={
-            "label": tf.train.Feature(int64_list=tf.train.Int64List(value=[index])),
-            'img_raw': tf.train.Feature(bytes_list=tf.train.BytesList(value=[img_raw]))
-        }))
-        writer.write(example.SerializeToString())
+        if not img_name.startswith("."):
+            img_path = class_path + img_name
+            img = Image.open(img_path).convert("L")
+            img = img.resize((60, 60))
+            img_raw = img.tobytes()  # 将图片转化为原生bytes
+            example = tf.train.Example(features=tf.train.Features(feature={
+                "label": tf.train.Feature(int64_list=tf.train.Int64List(value=[index])),
+                'img_raw': tf.train.Feature(bytes_list=tf.train.BytesList(value=[img_raw]))
+            }))
+            writer.write(example.SerializeToString())
 writer.close()
 
 # --------------------读取tfrecord----------------------
-files = tf.train.match_filenames_once("train.tfrecords")
-filename_queue = tf.train.string_input_producer(files, shuffle=False)
-
-# --------------------解析tfrecord数据-------------------
 reader = tf.TFRecordReader()
+filename_queue = tf.train.string_input_producer(["train.tfrecords"])
 _, serialized_example = reader.read(filename_queue)
 
 # 解析读取的样例
@@ -44,11 +42,11 @@ features = tf.parse_single_example(
 decoded_images = tf.decode_raw(features['img_raw'], tf.uint8)
 retyped_images = tf.cast(decoded_images, tf.float32)
 labels = tf.cast(features['label'], tf.int32)
-images = tf.reshape(retyped_images, [900])
+images = tf.reshape(retyped_images, [3600])
 
 
 # --------------------100一个batch 打包-------------------
-min_after_dequeue = 10000
+min_after_dequeue = 1000
 batch_size = 20
 capacity = min_after_dequeue + 3 * batch_size
 
@@ -65,11 +63,11 @@ def inference(input_tensor, weights1, biases1, weights2, biases2):
 
 
 # 模型相关的参数
-INPUT_NODE = 900
-OUTPUT_NODE = 3
-LAYER1_NODE = 500
+INPUT_NODE = 3600
+OUTPUT_NODE = 2
+LAYER1_NODE = 5
 REGULARAZTION_RATE = 0.0001
-TRAINING_STEPS = 5000
+TRAINING_STEPS = 1000
 
 weights1 = tf.Variable(tf.truncated_normal([INPUT_NODE, LAYER1_NODE], stddev=0.1))
 biases1 = tf.Variable(tf.constant(0.1, shape=[LAYER1_NODE]))
@@ -98,7 +96,7 @@ with tf.Session() as sess:
     threads = tf.train.start_queue_runners(sess=sess, coord=coord)
     # 循环的训练神经网络。
     for i in range(TRAINING_STEPS):
-        if i % 1000 == 0:
+        if i % 10 == 0:
             print("After %d training step(s), loss is %g " % (i, sess.run(loss)))
 
         sess.run(train_step)
