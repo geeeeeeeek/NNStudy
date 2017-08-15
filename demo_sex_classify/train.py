@@ -7,47 +7,54 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 cwd = os.getcwd()
 
-# ------------------创建tfrecord---------------------
-num_classes = ['/data/0', '/data/1']
-writer = tf.python_io.TFRecordWriter("train.tfrecords")
-for index, name in enumerate(num_classes):
-    class_path = cwd + name + "/"
-    print(class_path)
-    for img_name in os.listdir(class_path):
-        if not img_name.startswith("."):
-            img_path = class_path + img_name
-            img = Image.open(img_path).convert("L")
-            img = img.resize((60, 60))
-            img_raw = img.tobytes()  # 将图片转化为原生bytes
-            example = tf.train.Example(features=tf.train.Features(feature={
-                "label": tf.train.Feature(int64_list=tf.train.Int64List(value=[index])),
-                'img_raw': tf.train.Feature(bytes_list=tf.train.BytesList(value=[img_raw]))
-            }))
-            writer.write(example.SerializeToString())
-writer.close()
 
-# --------------------读取tfrecord----------------------
-reader = tf.TFRecordReader()
-filename_queue = tf.train.string_input_producer(["train.tfrecords"])
-_, serialized_example = reader.read(filename_queue)
+def create_record():
+    num_classes = ['/data/0', '/data/1']
+    writer = tf.python_io.TFRecordWriter("train.tfrecords")
+    for index, name in enumerate(num_classes):
+        class_path = cwd + name + "/"
+        print(class_path)
+        for img_name in os.listdir(class_path):
+            if not img_name.startswith("."):
+                img_path = class_path + img_name
+                img = Image.open(img_path).convert("L")
+                img = img.resize((60, 60))
+                img_raw = img.tobytes()  # 将图片转化为原生bytes
+                example = tf.train.Example(features=tf.train.Features(feature={
+                    "label": tf.train.Feature(int64_list=tf.train.Int64List(value=[index])),
+                    'img_raw': tf.train.Feature(bytes_list=tf.train.BytesList(value=[img_raw]))
+                }))
+                writer.write(example.SerializeToString())
+    writer.close()
 
-# 解析读取的样例
-features = tf.parse_single_example(
-    serialized_example,
-    features={
-        'img_raw': tf.FixedLenFeature([], tf.string),
-        'label': tf.FixedLenFeature([], tf.int64)
-    })
 
-decoded_images = tf.decode_raw(features['img_raw'], tf.uint8)
-retyped_images = tf.cast(decoded_images, tf.float32)
-labels = tf.cast(features['label'], tf.int32)
-images = tf.reshape(retyped_images, [3600])
+def read_record():
+    reader = tf.TFRecordReader()
+    filename_queue = tf.train.string_input_producer(["train.tfrecords"])
+    _, serialized_example = reader.read(filename_queue)
+
+    # 解析读取的样例
+    features = tf.parse_single_example(
+        serialized_example,
+        features={
+            'img_raw': tf.FixedLenFeature([], tf.string),
+            'label': tf.FixedLenFeature([], tf.int64)
+        })
+
+    decoded_images = tf.decode_raw(features['img_raw'], tf.uint8)
+    retyped_images = tf.cast(decoded_images, tf.float32)
+    labels = tf.cast(features['label'], tf.int32)
+    images = tf.reshape(retyped_images, [3600])
+    return images, labels
 
 
 # --------------------100一个batch 打包-------------------
+
+#create_record()
+images, labels = read_record()
+
 min_after_dequeue = 1000
-batch_size = 20
+batch_size = 10
 capacity = min_after_dequeue + 3 * batch_size
 
 image_batch, label_batch = tf.train.shuffle_batch([images, labels],
