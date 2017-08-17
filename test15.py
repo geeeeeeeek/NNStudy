@@ -1,21 +1,18 @@
 # -*- coding: utf-8 -*-
 import numpy
 
-num_labels = 5
-num_classes = 10
 
-# 行首偏移
-index_offset = numpy.arange(num_labels) * num_classes
+def dense_to_one_hot(labels, num_classes):
+    num_labels = labels.shape[0]
+    # 行首偏移
+    index_offset = numpy.arange(num_labels) * num_classes
+    labels_one_hot = numpy.zeros((num_labels, num_classes))
+    labels_one_hot.flat[index_offset + labels.ravel()] = 1
+    return labels_one_hot
 
-print(index_offset)
 
-# labels
-labels = numpy.array([2, 3, 4, 2, 9])
+labels = numpy.array([2, 1, 3, 4])
 
-print(labels)
-
-labels_one_hot = numpy.zeros((num_labels, num_classes))
-
-labels_one_hot.flat[index_offset + labels.ravel()] = 1
+labels_one_hot = dense_to_one_hot(labels, 5)
 
 print(labels_one_hot)
