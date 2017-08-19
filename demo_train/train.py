@@ -6,7 +6,7 @@ batch_size = 10
 
 dataset_size = 100
 
-
+# 生成模拟集
 def mock_dataset():
     rdm = RandomState(1)
     X = rdm.rand(dataset_size, 2)
@@ -39,11 +39,13 @@ def train():
 
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())
-        for i in range(5000):
+        for i in range(500):
             currentX, currentY = fetch_batch(i, X, Y)
             sess.run(train_step, feed_dict={x: currentX, y_: currentY})
             if i % 100 == 0:
                 total_cross_entropy = sess.run(cross_entropy, feed_dict={x: X, y_: Y})
                 print("%d steps is %g" % (i, total_cross_entropy))
+                print(sess.run(y, feed_dict={x: currentX, y_: currentY}))
 
-train()
+if __name__ == '__main__':
+    train()

@@ -50,7 +50,7 @@ def read_record():
 
 # --------------------100一个batch 打包-------------------
 
-#create_record()
+create_record()
 images, labels = read_record()
 
 min_after_dequeue = 1000
@@ -74,7 +74,6 @@ INPUT_NODE = 3600
 OUTPUT_NODE = 2
 LAYER1_NODE = 5
 REGULARAZTION_RATE = 0.0001
-TRAINING_STEPS = 1000
 
 weights1 = tf.Variable(tf.truncated_normal([INPUT_NODE, LAYER1_NODE], stddev=0.1))
 biases1 = tf.Variable(tf.constant(0.1, shape=[LAYER1_NODE]))
@@ -88,13 +87,8 @@ y = inference(image_batch, weights1, biases1, weights2, biases2)
 cross_entropy = tf.nn.sparse_softmax_cross_entropy_with_logits(logits=y, labels=label_batch)
 cross_entropy_mean = tf.reduce_mean(cross_entropy)
 
-# 损失函数的计算
-regularizer = tf.contrib.layers.l2_regularizer(REGULARAZTION_RATE)
-regularaztion = regularizer(weights1) + regularizer(weights2)
-loss = cross_entropy_mean + regularaztion
-
 # 优化损失函数
-train_step = tf.train.GradientDescentOptimizer(0.01).minimize(loss)
+train_step = tf.train.GradientDescentOptimizer(0.01).minimize(cross_entropy_mean)
 
 # 初始化会话，并开始训练过程。
 with tf.Session() as sess:
@@ -102,9 +96,9 @@ with tf.Session() as sess:
     coord = tf.train.Coordinator()
     threads = tf.train.start_queue_runners(sess=sess, coord=coord)
     # 循环的训练神经网络。
-    for i in range(TRAINING_STEPS):
-        if i % 10 == 0:
-            print("After %d training step(s), loss is %g " % (i, sess.run(loss)))
+    for i in range(1000):
+        if i % 1 == 0:
+            print("After %d training step(s), loss is %g " % (i, sess.run(cross_entropy_mean)))
 
         sess.run(train_step)
     coord.request_stop()

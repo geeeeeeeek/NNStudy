@@ -85,13 +85,9 @@ y = inference(x, weights1, biases1, weights2, biases2)
 cross_entropy = tf.nn.softmax_cross_entropy_with_logits(logits=y, labels=y_)
 cross_entropy_mean = tf.reduce_mean(cross_entropy)
 
-# 损失函数的计算
-regularizer = tf.contrib.layers.l2_regularizer(REGULARAZTION_RATE)
-regularaztion = regularizer(weights1) + regularizer(weights2)
-loss = cross_entropy_mean + regularaztion
 
 # 优化损失函数
-train_step = tf.train.GradientDescentOptimizer(0.01).minimize(loss)
+train_step = tf.train.GradientDescentOptimizer(0.01).minimize(cross_entropy)
 
 # 计算正确率
 correct_prediction = tf.equal(tf.to_int32(y), y_)
@@ -105,4 +101,4 @@ with tf.Session() as sess:
         xs, ys = sess.run([image_batch, label_batch])
         print(xs.shape, ys)
         sess.run(train_step, feed_dict={x: xs, y_: sess.run(tf.reshape(ys, [10, 1]))})
-        print("After %d training step(s), loss is %g " % (i, sess.run(loss)))
+        print("After %d training step(s), loss is %g " % (i, sess.run(cross_entropy)))

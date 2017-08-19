@@ -17,7 +17,7 @@ LEARNING_RATE_BASE = 0.8
 LEARNING_RATE_DECAY = 0.99
 
 REGULARIZATION_RATE = 0.0001
-TRAINING_STEPS = 4000
+TRAINING_STEPS = 2000
 MOVING_AVERAGE_DECAY = 0.99
 
 
@@ -90,13 +90,11 @@ def train(mnist):
 
         # 循环的训练神经网络。
         for i in range(TRAINING_STEPS):
+            xs, ys = mnist.train.next_batch(BATCH_SIZE)
+            sess.run(train_op, feed_dict={x: xs, y_: ys})
             if i % 100 == 0:
                 validate_acc = sess.run(accuracy, feed_dict=validate_feed)
                 print("After %d training step(s), validation accuracy using average model is %g " % (i, validate_acc))
-
-            xs, ys = mnist.train.next_batch(BATCH_SIZE)
-            print(xs.shape, ys.shape)
-            sess.run(train_op, feed_dict={x: xs, y_: ys})
 
         test_acc = sess.run(accuracy, feed_dict=test_feed)
         print("After %d training step(s), test accuracy using average model is %g" % (TRAINING_STEPS, test_acc))
