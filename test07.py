@@ -95,8 +95,7 @@ def train(mnist):
             if i % 100 == 0:
                 validate_acc = sess.run(accuracy, feed_dict=validate_feed)
                 print("After %d training step(s), validation accuracy using average model is %g " % (i, validate_acc))
-                print(sess.run(average_y, feed_dict=validate_feed))
-                print(average_y.shape)
+                print(sess.run(loss, feed_dict=validate_feed))
 
         test_acc = sess.run(accuracy, feed_dict=test_feed)
         print("After %d training step(s), test accuracy using average model is %g" % (TRAINING_STEPS, test_acc))

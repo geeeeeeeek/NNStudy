@@ -60,11 +60,11 @@ create_record()
 images, labels = read_record()
 
 min_after_dequeue = 5000
-batch_size = 100
-capacity = min_after_dequeue + 3 * batch_size
+BATCH_SIZE = 200
+capacity = min_after_dequeue + 3 * BATCH_SIZE
 
 image_batch, label_batch = tf.train.shuffle_batch([images, labels],
-                            batch_size=batch_size,
+                            batch_size=BATCH_SIZE,
                             capacity=capacity,
                             min_after_dequeue=min_after_dequeue)
 
@@ -76,7 +76,7 @@ def inference(input_tensor, weights1, biases1, weights2, biases2):
 # 模型相关的参数
 INPUT_NODE = 784
 OUTPUT_NODE = 2
-LAYER1_NODE = 50
+LAYER1_NODE = 400
 REGULARAZTION_RATE = 0.0001
 TRAINING_STEPS = 1000
 
@@ -98,11 +98,11 @@ cross_entropy_mean = tf.reduce_mean(cross_entropy)
 # 正则化
 regularizer = tf.contrib.layers.l2_regularizer(REGULARAZTION_RATE)
 regularaztion = regularizer(weights1) + regularizer(weights2)
-
 loss = cross_entropy_mean + regularaztion
 
+
 # 优化器
-train_step = tf.train.AdamOptimizer(0.001).minimize(loss)
+train_step = tf.train.GradientDescentOptimizer(0.001).minimize(loss)
 
 # 计算正确率
 correct_prediction = tf.equal(tf.arg_max(y, 1), tf.arg_max(y_, 1))
@@ -112,10 +112,9 @@ accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 with tf.Session() as sess:
     tf.global_variables_initializer().run()
     threads = tf.train.start_queue_runners(sess=sess)
-    for i in range(500):
+    for i in range(800):
         xs, ys = sess.run([image_batch, label_batch])
         ys = dense_to_one_hot(ys, 2)
-        # print(ys)
         sess.run(train_step, feed_dict={x: xs, y_: ys})
         if i % 10 == 0:
             print("%d step(s), loss --> %g " % (i, sess.run(loss, feed_dict={x: xs, y_: ys})))
