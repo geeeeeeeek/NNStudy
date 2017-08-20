@@ -1,11 +1,21 @@
 # -*- coding: utf-8 -*-
 import tensorflow as tf
+import numpy
 from PIL import Image
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 
 cwd = os.getcwd()
+
+
+def dense_to_one_hot(labels, num_classes):
+    num_labels = labels.shape[0]
+    # 行首偏移
+    index_offset = numpy.arange(num_labels) * num_classes
+    labels_one_hot = numpy.zeros((num_labels, num_classes))
+    labels_one_hot.flat[index_offset + labels.ravel()] = 1
+    return labels_one_hot
 
 
 def create_record():
@@ -53,8 +63,9 @@ def read_record():
 create_record()
 images, labels = read_record()
 
+
 min_after_dequeue = 1000
-batch_size = 10
+batch_size = 200
 capacity = min_after_dequeue + 3 * batch_size
 
 image_batch, label_batch = tf.train.shuffle_batch([images, labels],
@@ -87,8 +98,18 @@ y = inference(image_batch, weights1, biases1, weights2, biases2)
 cross_entropy = tf.nn.sparse_softmax_cross_entropy_with_logits(logits=y, labels=label_batch)
 cross_entropy_mean = tf.reduce_mean(cross_entropy)
 
+# 正则化
+regularizer = tf.contrib.layers.l2_regularizer(REGULARAZTION_RATE)
+regularaztion = regularizer(weights1) + regularizer(weights2)
+
+loss = cross_entropy_mean + regularaztion
+
 # 优化损失函数
-train_step = tf.train.GradientDescentOptimizer(0.01).minimize(cross_entropy_mean)
+train_step = tf.train.AdamOptimizer(0.001).minimize(loss)
+
+# 正确率
+# correct_prediction = tf.equal(tf.argmax(average_y, 1), tf.argmax(y_, 1))
+# accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
 # 初始化会话，并开始训练过程。
 with tf.Session() as sess:
@@ -96,10 +117,9 @@ with tf.Session() as sess:
     coord = tf.train.Coordinator()
     threads = tf.train.start_queue_runners(sess=sess, coord=coord)
     # 循环的训练神经网络。
-    for i in range(1000):
-        if i % 1 == 0:
-            print("After %d training step(s), loss is %g " % (i, sess.run(cross_entropy_mean)))
-
+    for i in range(200):
+        if i % 10 == 0:
+            print("After %d training step(s), loss is %g " % (i, sess.run(loss)))
         sess.run(train_step)
     coord.request_stop()
     coord.join(threads)

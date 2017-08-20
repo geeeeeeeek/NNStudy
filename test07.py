@@ -17,7 +17,7 @@ LEARNING_RATE_BASE = 0.8
 LEARNING_RATE_DECAY = 0.99
 
 REGULARIZATION_RATE = 0.0001
-TRAINING_STEPS = 2000
+TRAINING_STEPS = 1000
 MOVING_AVERAGE_DECAY = 0.99
 
 
@@ -95,6 +95,8 @@ def train(mnist):
             if i % 100 == 0:
                 validate_acc = sess.run(accuracy, feed_dict=validate_feed)
                 print("After %d training step(s), validation accuracy using average model is %g " % (i, validate_acc))
+                print(sess.run(average_y, feed_dict=validate_feed))
+                print(average_y.shape)
 
         test_acc = sess.run(accuracy, feed_dict=test_feed)
         print("After %d training step(s), test accuracy using average model is %g" % (TRAINING_STEPS, test_acc))
