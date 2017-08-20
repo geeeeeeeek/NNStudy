@@ -4,78 +4,7 @@
     <bookmark url="file://$USER_HOME$/tensorflow/lib/python2.7/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py" line="144" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f38f2df-fd59-409c-8eec-729f83651a27" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/0/test01.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/0/test010.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/0/test011.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/0/test012.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/0/test013.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/0/test014.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/0/test015.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/0/test016.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/0/test017.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/0/test018.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/0/test019.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/0/test020.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/0/test03.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/0/test05.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/0/test07.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/0/test08.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/0/test09.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/1111.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test010.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test011.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test012.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test013.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test014.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test015.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test016.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test017.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test018.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test019.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test02.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test020.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test021.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test022.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test023.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test024.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test025.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test026.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test027.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test028.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test029.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test030.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test031.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test032.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test033.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test034.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test035.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test036.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test037.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test038.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test039.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test040.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test041.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test042.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test043.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test044.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test045.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test046.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test047.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test048.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test049.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test05.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test050.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test06.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test07.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test08.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo_sex_classify/data/1/test09.jpeg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo_sex_classify/train.py" afterPath="$PROJECT_DIR$/demo_sex_classify/train.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo_sex_classify/train.tfrecords" afterPath="$PROJECT_DIR$/demo_sex_classify/train.tfrecords" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo_sex_classify/train2.py" afterPath="$PROJECT_DIR$/demo_sex_classify/train2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test07.py" afterPath="$PROJECT_DIR$/test07.py" />
-    </list>
+    <list default="true" id="8f38f2df-fd59-409c-8eec-729f83651a27" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,10 +19,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="train2.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demo_sex_classify/train2.py">
+        <entry file="file://$USER_HOME$/tf_study/demo_sex_classify/train2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="100" column="33" lean-forward="false" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
+            <state relative-caret-position="558">
+              <caret line="113" column="19" lean-forward="false" selection-start-line="113" selection-start-column="19" selection-end-line="113" selection-end-column="19" />
               <folding>
                 <element signature="e#24#47#0" expanded="true" />
               </folding>
@@ -102,7 +31,7 @@
         </entry>
       </file>
       <file leaf-file-name="test15.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test15.py">
+        <entry file="file://$USER_HOME$/tf_study/test15.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
               <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
@@ -112,7 +41,7 @@
         </entry>
       </file>
       <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo_train/utils.py">
+        <entry file="file://$USER_HOME$/tf_study/demo_train/utils.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
               <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
@@ -124,7 +53,7 @@
         </entry>
       </file>
       <file leaf-file-name="test07.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test07.py">
+        <entry file="file://$USER_HOME$/tf_study/test07.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="356">
               <caret line="81" column="53" lean-forward="false" selection-start-line="81" selection-start-column="44" selection-end-line="81" selection-end-column="53" />
@@ -136,7 +65,7 @@
         </entry>
       </file>
       <file leaf-file-name="train.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo_sex_classify/train.py">
+        <entry file="file://$USER_HOME$/tf_study/demo_sex_classify/train.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
               <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="17" selection-end-column="25" />
@@ -232,7 +161,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="py_project" />
+              <option name="myItemId" value="tf_study" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -242,7 +171,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="py_project" />
+              <option name="myItemId" value="tf_study" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -256,7 +185,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="py_project" />
+              <option name="myItemId" value="tf_study" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -270,7 +199,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="py_project" />
+              <option name="myItemId" value="tf_study" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -390,13 +319,13 @@
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/tf_study" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="py_project" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test07.py&quot;" />
+      <option name="_new_target" value="&quot;$USER_HOME$/tf_study/test07.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
@@ -538,10 +467,10 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2081545" sideWeight="0.49036145" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2081545" sideWeight="0.49036145" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.8168675" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8168675" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -657,7 +586,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo_sex_classify/test.tfrecords">
+    <entry file="file://$USER_HOME$/tf_study/demo_sex_classify/test.tfrecords">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -665,7 +594,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo_sex_classify/mock.py">
+    <entry file="file://$USER_HOME$/tf_study/demo_sex_classify/mock.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
@@ -673,7 +602,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo_sex_classify/read.py">
+    <entry file="file://$USER_HOME$/tf_study/demo_sex_classify/read.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="917">
           <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
@@ -725,7 +654,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test11.py">
+    <entry file="file://$USER_HOME$/tf_study/test11.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
@@ -733,7 +662,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test01.py">
+    <entry file="file://$USER_HOME$/tf_study/test01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -749,7 +678,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test14.py">
+    <entry file="file://$USER_HOME$/tf_study/test14.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="371">
           <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="26" />
@@ -795,7 +724,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo_sex_classify/data/1/a9.jpeg">
+    <entry file="file://$USER_HOME$/tf_study/demo_sex_classify/data/1/a9.jpeg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -851,7 +780,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo_train/train.py">
+    <entry file="file://$USER_HOME$/tf_study/demo_train/train.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="37" column="39" lean-forward="false" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="39" />
@@ -861,7 +790,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/numpy_examples/test01.py">
+    <entry file="file://$USER_HOME$/tf_study/numpy_examples/test01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
@@ -869,7 +798,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo_train/utils.py">
+    <entry file="file://$USER_HOME$/tf_study/demo_train/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
@@ -879,7 +808,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test15.py">
+    <entry file="file://$USER_HOME$/tf_study/test15.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
@@ -887,7 +816,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test07.py">
+    <entry file="file://$USER_HOME$/tf_study/test07.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
           <caret line="81" column="53" lean-forward="false" selection-start-line="81" selection-start-column="44" selection-end-line="81" selection-end-column="53" />
@@ -897,7 +826,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo_sex_classify/train.py">
+    <entry file="file://$USER_HOME$/tf_study/demo_sex_classify/train.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="17" selection-end-column="25" />
@@ -907,10 +836,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo_sex_classify/train2.py">
+    <entry file="file://$USER_HOME$/tf_study/demo_sex_classify/train2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="100" column="33" lean-forward="false" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
+        <state relative-caret-position="558">
+          <caret line="113" column="19" lean-forward="false" selection-start-line="113" selection-start-column="19" selection-end-line="113" selection-end-column="19" />
           <folding>
             <element signature="e#24#47#0" expanded="true" />
           </folding>
