@@ -10,7 +10,6 @@ cwd = os.getcwd()
 
 def dense_to_one_hot(labels, num_classes):
     num_labels = labels.shape[0]
-    # 行首偏移
     index_offset = numpy.arange(num_labels) * num_classes
     labels_one_hot = numpy.zeros((num_labels, num_classes))
     labels_one_hot.flat[index_offset + labels.ravel()] = 1
@@ -61,7 +60,7 @@ create_record()
 images, labels = read_record()
 
 min_after_dequeue = 5000
-batch_size = 200
+batch_size = 100
 capacity = min_after_dequeue + 3 * batch_size
 
 image_batch, label_batch = tf.train.shuffle_batch([images, labels],
@@ -77,7 +76,7 @@ def inference(input_tensor, weights1, biases1, weights2, biases2):
 # 模型相关的参数
 INPUT_NODE = 784
 OUTPUT_NODE = 2
-LAYER1_NODE = 5
+LAYER1_NODE = 50
 REGULARAZTION_RATE = 0.0001
 TRAINING_STEPS = 1000
 
@@ -96,9 +95,14 @@ y = inference(x, weights1, biases1, weights2, biases2)
 cross_entropy = tf.nn.softmax_cross_entropy_with_logits(logits=y, labels=y_)
 cross_entropy_mean = tf.reduce_mean(cross_entropy)
 
+# 正则化
+regularizer = tf.contrib.layers.l2_regularizer(REGULARAZTION_RATE)
+regularaztion = regularizer(weights1) + regularizer(weights2)
 
-# 优化损失函数
-train_step = tf.train.AdamOptimizer(0.001).minimize(cross_entropy)
+loss = cross_entropy_mean + regularaztion
+
+# 优化器
+train_step = tf.train.AdamOptimizer(0.001).minimize(loss)
 
 # 计算正确率
 correct_prediction = tf.equal(tf.arg_max(y, 1), tf.arg_max(y_, 1))
@@ -108,13 +112,13 @@ accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 with tf.Session() as sess:
     tf.global_variables_initializer().run()
     threads = tf.train.start_queue_runners(sess=sess)
-    for i in range(1000):
+    for i in range(500):
         xs, ys = sess.run([image_batch, label_batch])
         ys = dense_to_one_hot(ys, 2)
         # print(ys)
         sess.run(train_step, feed_dict={x: xs, y_: ys})
-        if i % 100 == 0:
-            print("%d step(s), loss --> %g " % (i, sess.run(cross_entropy_mean, feed_dict={x: xs, y_: ys})))
+        if i % 10 == 0:
+            print("%d step(s), loss --> %g " % (i, sess.run(loss, feed_dict={x: xs, y_: ys})))
             print("accuracy --> %g" % sess.run(accuracy, feed_dict={x: xs, y_: ys}))
-            print(sess.run(tf.arg_max(y, 1), feed_dict={x: xs, y_: ys}))
-            print(sess.run(tf.arg_max(ys, 1)))
+            # print(sess.run(tf.arg_max(y, 1), feed_dict={x: xs, y_: ys}))
+            # print(sess.run(tf.arg_max(ys, 1)))

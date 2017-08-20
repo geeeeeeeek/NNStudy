@@ -83,7 +83,7 @@ def inference(input_tensor, weights1, biases1, weights2, biases2):
 # 模型相关的参数
 INPUT_NODE = 3600
 OUTPUT_NODE = 2
-LAYER1_NODE = 5
+LAYER1_NODE = 70
 REGULARAZTION_RATE = 0.0001
 
 weights1 = tf.Variable(tf.truncated_normal([INPUT_NODE, LAYER1_NODE], stddev=0.1))
@@ -107,9 +107,6 @@ loss = cross_entropy_mean + regularaztion
 # 优化损失函数
 train_step = tf.train.AdamOptimizer(0.001).minimize(loss)
 
-# 正确率
-# correct_prediction = tf.equal(tf.argmax(average_y, 1), tf.argmax(y_, 1))
-# accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
 # 初始化会话，并开始训练过程。
 with tf.Session() as sess:
@@ -117,7 +114,7 @@ with tf.Session() as sess:
     coord = tf.train.Coordinator()
     threads = tf.train.start_queue_runners(sess=sess, coord=coord)
     # 循环的训练神经网络。
-    for i in range(200):
+    for i in range(500):
         if i % 10 == 0:
             print("After %d training step(s), loss is %g " % (i, sess.run(loss)))
         sess.run(train_step)
