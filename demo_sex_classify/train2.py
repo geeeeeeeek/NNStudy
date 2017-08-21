@@ -102,17 +102,19 @@ loss = cross_entropy_mean + regularaztion
 
 
 # 优化器
-train_step = tf.train.GradientDescentOptimizer(0.001).minimize(loss)
+train_step = tf.train.GradientDescentOptimizer(0.0005).minimize(loss)
 
 # 计算正确率
 correct_prediction = tf.equal(tf.arg_max(y, 1), tf.arg_max(y_, 1))
 accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
+# 低度下降时本案例最佳参数：batch_size 200 layer1_node 400 learning_rate 0.0005
+
 # 初始化会话，并开始训练过程。
 with tf.Session() as sess:
     tf.global_variables_initializer().run()
     threads = tf.train.start_queue_runners(sess=sess)
-    for i in range(800):
+    for i in range(500):
         xs, ys = sess.run([image_batch, label_batch])
         ys = dense_to_one_hot(ys, 2)
         sess.run(train_step, feed_dict={x: xs, y_: ys})
