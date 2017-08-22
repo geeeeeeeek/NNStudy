@@ -71,8 +71,8 @@ TRAINING_STEPS = 1000
 BATCH_SIZE = 200
 LEARNING_RATE = 0.001
 
-data_train_root = ["/data-train/0", "/data-train/1"]
-data_validate_root = ["/data-validate/0", "/data-validate/1"]
+data_train_root = ["/data/train/0", "/data/train/1"]
+data_validate_root = ["/data/validate/0", "/data/validate/1"]
 record_train_name = "train.tfrecords"
 record_validate_name = "validate.tfrecords"
 
@@ -126,7 +126,8 @@ def train():
             # print(sess.run(tf.arg_max(y, 1), feed_dict={x: xs, y_: ys}))
             # print(sess.run(tf.arg_max(ys, 1)))
             if i % 10 == 0:
-                print("%d step(s), loss --> %g " % (i, sess.run(loss, feed_dict={x: train_x, y_: train_y})))
+                print("%d steps" % i)
+                print("loss --> %g " % sess.run(loss, feed_dict={x: train_x, y_: train_y}))
                 validate_x, validate_y = sess.run([validata_image_batch, validate_label_batch])
                 validate_y = utils.dense_to_one_hot(validate_y, 2)
                 print("accuracy --> %g" % sess.run(accuracy, feed_dict={x: validate_x, y_: validate_y}))

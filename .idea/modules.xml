@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/py_project.iml" filepath="$PROJECT_DIR$/.idea/py_project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/tf_study.iml" filepath="$PROJECT_DIR$/.idea/tf_study.iml" />
     </modules>
   </component>
 </project>
