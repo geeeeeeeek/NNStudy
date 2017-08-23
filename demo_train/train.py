@@ -6,6 +6,8 @@ batch_size = 10
 
 dataset_size = 100
 
+MODEL_PATH = "model.ckpt"
+
 # 生成模拟集
 def mock_dataset():
     rdm = RandomState(1)
@@ -37,15 +39,39 @@ def train():
 
     train_step = tf.train.AdamOptimizer(0.001).minimize(cross_entropy)
 
+    saver = tf.train.Saver()
+
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())
-        for i in range(500):
+        for i in range(1500):
             currentX, currentY = fetch_batch(i, X, Y)
             sess.run(train_step, feed_dict={x: currentX, y_: currentY})
             if i % 100 == 0:
                 total_cross_entropy = sess.run(cross_entropy, feed_dict={x: X, y_: Y})
                 print("%d steps is %g" % (i, total_cross_entropy))
                 print(sess.run(y, feed_dict={x: currentX, y_: currentY}))
+        saver.save(sess, MODEL_PATH)
+
+
+def test():
+    X, Y = mock_dataset()
+
+    w1 = tf.Variable(tf.random_normal([2, 3], stddev=1, seed=1))
+    w2 = tf.Variable(tf.random_normal([3, 1], stddev=1, seed=1))
+
+    x = tf.placeholder(tf.float32, shape=(None, 2), name='x-input')
+
+    a = tf.matmul(x, w1)
+    y = tf.matmul(a, w2)
+
+    saver = tf.train.Saver([w1, w2])
+
+    with tf.Session() as sess:
+        saver.restore(sess, MODEL_PATH)
+        print("模型已恢复")
+        print(sess.run(y, feed_dict={x: X[:3]}))
+        print(Y[:3])
 
 if __name__ == '__main__':
-    train()
+    # train()
+    test()

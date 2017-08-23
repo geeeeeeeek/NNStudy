@@ -62,6 +62,7 @@ def inference(input_tensor, weights1, biases1, weights2, biases2):
 
 # 低度下降时本案例最佳参数：batch_size 200 layer1_node 400 learning_rate 0.0005
 # AdamOptimizer 最佳参数：batch_size 200 layer1_node 50 learning_rate 0.001
+
 # 模型相关的参数
 INPUT_NODE = 784
 OUTPUT_NODE = 2
@@ -126,7 +127,7 @@ def train():
             # print(sess.run(tf.arg_max(y, 1), feed_dict={x: xs, y_: ys}))
             # print(sess.run(tf.arg_max(ys, 1)))
             if i % 10 == 0:
-                print("%d steps" % i)
+                print("\n%d steps" % i)
                 print("loss --> %g " % sess.run(loss, feed_dict={x: train_x, y_: train_y}))
                 validate_x, validate_y = sess.run([validata_image_batch, validate_label_batch])
                 validate_y = utils.dense_to_one_hot(validate_y, 2)
