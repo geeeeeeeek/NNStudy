@@ -10,7 +10,7 @@ print "tf version --> ", tf.__version__
 W = tf.Variable([.3], dtype=tf.float32)
 b = tf.Variable([-.3], dtype=tf.float32)
 # Model input and output
-x = tf.placeholder(tf.float32)
+x = tf.placeholder(tf.float32, name="x-input")
 linear_model = W * x + b
 y = tf.placeholder(tf.float32)
 # loss
