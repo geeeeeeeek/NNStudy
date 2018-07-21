@@ -15,7 +15,7 @@ def add_layer(inputs, in_size, out_size, activation_function=None):
     return outputs
 
 
-# Make up some real data
+# Make up some real data # np.newaxis添加一个轴
 x_data = np.linspace(-1, 1, 300)[:, np.newaxis]
 noise = np.random.normal(0, 0.05, x_data.shape)
 y_data = np.square(x_data) - 0.5 + noise

@@ -15,3 +15,5 @@ with tf.Session() as sess:
     for _ in range(3):
         sess.run(update)
         print(sess.run(state))
+
+
